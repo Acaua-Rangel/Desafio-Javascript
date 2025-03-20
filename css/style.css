@@ -118,3 +118,38 @@ button {
     border: 0px;
     border-radius: 10px;
 }
+
+.scroll-container {
+    max-width: 90vw; /* Define um tamanho máximo */
+    overflow-x: auto; /* Permite o scroll horizontal */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap; /* Evita quebra de linha nos textos */
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#compare_image_0,
+#compare_image_1 {
+    width: 300px;
+    height: auto;
+}
+
+dialog {
+    position: fixed;
+    top: 10px;
+    max-width: 95vw;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
