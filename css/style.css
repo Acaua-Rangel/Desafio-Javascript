@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background: #FFFFFF;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -109,9 +112,6 @@ footer div {
     margin-right: 40px;
 }
 
-button:hover {
-    background: #1b357e;
-}
 button {
     background: #1351d8;
     color: #fff;
