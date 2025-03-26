@@ -14,7 +14,7 @@ class Car {
         this.closeBtn = document.getElementById("close_compare");
 
         this.compareBtn.onclick = () => this.ShowCompare();
-        this.closeBtn.onclick = () => this.dialog.close();
+        this.closeBtn.onclick = () => this.HideCompare();
     }
 
     createItem(item, index) {
@@ -87,6 +87,10 @@ class Car {
         } else {
             alert("Para comparação, é necessário marcar dois itens");
         }
+    }
+
+    HideCompare() {
+        this.dialog.close();
     }
 
     UpdateCompareTable() {
