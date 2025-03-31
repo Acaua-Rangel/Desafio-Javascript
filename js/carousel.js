@@ -1,4 +1,16 @@
 class Carousel {
+    image;
+    title;
+    url;
+
+    constructor(image, title, url) {
+        this.image = image;
+        this.title = title;
+        this.url = url;
+    }
+}
+
+class Logic {
     constructor(images, interval = 2000) {
         this.images = images;
         this.index = 0;
@@ -57,24 +69,12 @@ class Carousel {
 
 // Dados do carrossel
 const images = [
-    {
-        image: "img/imagem_1.jpg",
-        title: "Esta é a nova Ranger Ford 2022",
-        url: "lancamento.html"
-    },
-    {
-        image: "img/imagem_2.jpg",
-        title: "Ford a nossa história",
-        url: "#"
-    },
-    {
-        image: "img/imagem_3.jpg",
-        title: "Nova Ford Bronco Sport 2022",
-        url: "lancamento.html"
-    }
-];
+    new Carousel("img/imagem_1.jpg", "Esta é a nova Ranger Ford 2022", "lancamento.html"),
+    new Carousel("img/imagem_2.jpg", "Ford a nossa história", "#"),
+    new Carousel("img/imagem_3.jpg", "Nova Ford Bronco Sport 2022", "lancamento.html"),
+]
 
 // Inicializa o carrossel quando a página carregar
 document.addEventListener("DOMContentLoaded", () => {
-    new Carousel(images);
+    new Logic(images);
 });
